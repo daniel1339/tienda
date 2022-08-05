@@ -18,37 +18,37 @@ class ProductSeeder extends Seeder
         $products = [
             [
                 'name' => 'Camisa deportiva',
-                'observations' => '',
+                'observations' => 'df',
                 'size' => 'S',
                 'brand_id'=> 1,//marca nike
                 'qty'=> 5,
-                'shipping_date'=> '20/08/2022'
+                'shipping_date'=> '2022-08-25'
             ],
             [
                 'name' => 'Camiseta',
-                'observations' => '',
+                'observations' => 'dfs',
                 'size' => 'M',
                 'brand_id'=> 1,//marca nike
                 'qty'=> 10,
-                'shipping_date'=> '25/08/2022'
+                'shipping_date'=> '2022-08-25'
             ],
 
             [
                 'name' => 'Buso',
-                'observations' => '',
+                'observations' => 'dfs',
                 'size' => 'M',
                 'brand_id'=> 2,//marca adidas
                 'qty'=> 6,
-                'shipping_date'=> '23/08/2022'
+                'shipping_date'=> '2022-08-25'
             ],
 
             [
                 'name' => 'Sudadera',
-                'observations' => '',
+                'observations' => 'dsf',
                 'size' => 'L',
                 'brand_id'=> 2, //marca adidas
                 'qty'=> 5,
-                'shipping_date'=> '25/08/2022'
+                'shipping_date'=> '2022-08-25'
             ],
            
            

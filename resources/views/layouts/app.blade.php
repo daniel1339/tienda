@@ -9,8 +9,15 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
+        <!-- icons -->
 
-        <!-- Scripts -->
+        <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
+
+       
+
+        <!-- sweetalert -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Styles -->
@@ -40,5 +47,17 @@
         @stack('modals')
 
         @livewireScripts
+
+        @stack('js')
+
+        <script>
+            Livewire.on('alert',function(message){
+                Swal.fire(
+                    'Buen trabajo!',
+                    message,
+                    'success'
+                )
+            })
+        </script>
     </body>
 </html>

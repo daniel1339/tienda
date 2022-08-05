@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Livewire\Brand\ShowBrand;
+use App\Http\Livewire\Product\ShowProduct;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',ShowProduct::class)->name('productos');
+Route::get('/marcas',ShowBrand::class)->name('marcas');
 
 Route::middleware([
     'auth:sanctum',
